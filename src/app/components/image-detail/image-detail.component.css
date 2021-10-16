@@ -1,0 +1,120 @@
+/* Search Bar Starts */
+.search-container {
+  width: 100%;
+  height: 60px;
+  background-color: #323a45;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.search-form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.search-input {
+  margin-left: 10px;
+  padding: 10px;
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  border: none;
+}
+.search-button {
+  border: none;
+  outline: none;
+  background: #3f51b5;
+  padding: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.search-button:hover {
+  color: #3f51b5;
+  background-color: #fff;
+  border: 1px solid #3f51b5;
+}
+.logo {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sort{
+  margin: 0 0 16px;
+
+}
+
+/* Image Card Starts */
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 58px auto;
+}
+.image {
+  width: 550px;
+  margin: 10px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #202020;
+  box-shadow: 4px 3px 8px 0px rgba(200, 152, 44, 0.22);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.image:hover {
+  box-shadow: 4px 3px 11px 6px rgba(200, 152, 44, 0.46);
+  transform: translateY(-3px);
+}
+.image-thumb-container {
+  background-color: #000;
+  position: relative;
+  height: 172px;
+  color: #fff;
+  text-align: center;
+}
+.image-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 372px;
+}
+.image-description {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 157px;
+}
+.image-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: -120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.image-platforms {
+  display: flex;
+}
+.image-platform {
+  width: 20px;
+  margin-right: 10px;
+}

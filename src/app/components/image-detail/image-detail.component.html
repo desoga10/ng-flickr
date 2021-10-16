@@ -1,0 +1,28 @@
+<div class="search-container">
+  <form class="search-form">
+    <span class="logo">Flickr</span>
+    <input (keyup)="search($event)" placeholder="Search images" class="search-input" name="search"
+      placeholder="Search images" />
+    <button class="search-button" style="background-color: black; margin-right: 10px"> Reset Input</button>
+    <button class="search-button" type="submit" (onClick)="search($event)"> Search</button>
+  </form>
+</div>
+
+<div class="sort">
+  <h3>Requests</h3>
+</div>
+
+<div class="images">
+  <ng-container *ngIf="image">
+    <div class="image">
+      <div class="image-thumb-container">
+        <img src="{{image.url}}_m.jpg" alt="thumbnail" class="image-thumbnail" />
+        <!-- <p *ngIf="!ourimage.background_image">No Image</p> -->
+      </div>
+      <div class="image-description">
+        <p class="image-name">Our image</p>
+        <button style="margin-top:130px">Show More</button>
+      </div>
+    </div>
+  </ng-container>
+</div>
